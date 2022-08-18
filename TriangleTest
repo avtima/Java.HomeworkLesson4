@@ -1,0 +1,14 @@
+public class TriangleTest {
+   @Test
+    public void checkLength() {
+
+        List<Point> e = new ArrayList<>();
+        e.add(new Point(0, 0));
+        e.add(new Point(5, 0));
+        e.add(new Point(5, 5));
+
+        Triangle t = new Triangle(e);
+        assertEquals(17.00, t.getLength(), 0.09);
+
+    }
+}
