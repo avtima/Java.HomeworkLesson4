@@ -1,0 +1,13 @@
+public class PolyLineTest {
+    @Test
+    public void checkLength(){
+        List<Point> p = new ArrayList<>();
+        p.add(new Point(0,  0));
+        p.add(new Point(5, 5));
+        p.add(new Point(5, 0));
+        p.add(new Point(0, 5));
+
+        PolyLine pol = new PolyLine(p);
+        assertEquals(19.00, pol.getLength(), 0.2);
+    }
+}
