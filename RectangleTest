@@ -1,0 +1,13 @@
+public class RectangleTest {
+    @Test
+    public void checkLength(){
+        List<Point> p = new ArrayList<>();
+        p.add(new Point(0,  0));
+        p.add(new Point(5, 5));
+        p.add(new Point(5, 0));
+        p.add(new Point(0, 5));
+
+        Rectangle r = new Rectangle(p);
+        assertEquals(24.00, r.getLength(), 0.2);
+    }
+}
